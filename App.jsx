@@ -4,7 +4,7 @@ import {View, Text} from 'react-native';
 const App = () => {
   return (
     <View>
-      <Text>Hello world! Hassan by using the cli approche</Text>
+      <Text>Hello world! Hassan by using the cli</Text>
     </View>
   );
 };
