@@ -1,22 +1,22 @@
 import React from 'react';
 import {View, Image, StyleSheet} from 'react-native';
+import {Heading, Paragraph} from '../../../components/startText/Text';
 
-const Welcome = () => {
+const First = () => {
   return (
     <View style={styles.container}>
-      <Image source={require('../../assets/owl.png')} />
+      <Image source={require('../../../assets/start1.png')} />
+      <Heading title="Make your own private travel plan" />
     </View>
   );
 };
 
-export default Welcome;
+export default First;
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: '20px',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(48, 98, 243, 1)',
   },
 });
