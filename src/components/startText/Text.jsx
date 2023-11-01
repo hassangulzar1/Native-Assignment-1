@@ -11,7 +11,7 @@ export const Heading = props => {
 export const Paragraph = props => {
   return (
     <View>
-      <Text style={styles.heading}>{props.Text}</Text>
+      <Text style={styles.text}>{props.Text}</Text>
     </View>
   );
 };
@@ -20,8 +20,18 @@ const styles = StyleSheet.create({
   heading: {
     textAlign: 'center',
     fontSize: 28,
+    marginTop: 20,
     fontWeight: '600',
     color: 'black',
     lineHeight: 42,
+  },
+  text: {
+    marginTop: 10,
+    fontWeight: '400',
+    textAlign: 'center',
+    fontSize: 18,
+    paddingHorizontal: 30,
+    lineHeight: 27,
+    color: 'rgba(180, 180, 180, 1)',
   },
 });
