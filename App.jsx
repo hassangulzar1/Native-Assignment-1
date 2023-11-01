@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import Welcome from './src/screens/1- Welcome/Welcome';
 
 const App = () => {
   return (
-    <View>
-      <Text>Hello world! Hassan by using the cli</Text>
-    </View>
+    <>
+      <Welcome />
+    </>
   );
 };
 
