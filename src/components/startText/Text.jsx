@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, StyleSheet, View} from 'react-native';
+import {Text, StyleSheet, View, Image} from 'react-native';
 export const Heading = props => {
   return (
     <View>
@@ -12,6 +12,17 @@ export const Paragraph = props => {
   return (
     <View>
       <Text style={styles.text}>{props.Text}</Text>
+    </View>
+  );
+};
+
+export const LastText = props => {
+  return (
+    <View style={styles.footer}>
+      <View>
+        <Image source={require('../../assets/Zaps.png')} />
+      </View>
+      <Text>Nordic Vacation Sponsor</Text>
     </View>
   );
 };
@@ -34,5 +45,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 27,
     lineHeight: 27,
     color: 'rgba(180, 180, 180, 1)',
+  },
+  footer: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 });

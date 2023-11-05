@@ -13,7 +13,7 @@ export default StartButton;
 
 const styles = StyleSheet.create({
   buttonContainer: {
-    backgroundColor: '#3498db',
+    backgroundColor: 'rgba(3, 115, 243, 1)',
     padding: 10,
     borderRadius: 50,
     marginTop: 15,
