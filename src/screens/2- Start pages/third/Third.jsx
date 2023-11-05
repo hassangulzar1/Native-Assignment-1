@@ -4,6 +4,7 @@ import {Heading, Paragraph} from '../../../components/startText/Text';
 import StartButton from '../../../components/startButtons/Button';
 
 const Third = () => {
+  let imagePath = require('../../../assets/startBtn.png');
   return (
     <View style={styles.container}>
       <Image source={require('../../../assets/start3.png')} />
@@ -12,7 +13,7 @@ const Third = () => {
         Text="The world's first-class modern leisure 
 and entertainment method"
       />
-      <StartButton />
+      <StartButton img={imagePath} />
     </View>
   );
 };

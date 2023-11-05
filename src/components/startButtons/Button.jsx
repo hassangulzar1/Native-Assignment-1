@@ -1,12 +1,22 @@
 import React from 'react';
-import {Button, View} from 'react-native';
+import {StyleSheet, Image, TouchableOpacity} from 'react-native';
 
-const StartButton = () => {
+const StartButton = props => {
   return (
-    <View style={{marginTop: 20}}>
-      <Button title="a" />
-    </View>
+    <TouchableOpacity style={styles.buttonContainer}>
+      <Image source={props.img} />
+    </TouchableOpacity>
   );
 };
 
 export default StartButton;
+
+const styles = StyleSheet.create({
+  buttonContainer: {
+    backgroundColor: '#3498db',
+    padding: 10,
+    borderRadius: 50,
+    marginTop: 15,
+    alignItems: 'center',
+  },
+});

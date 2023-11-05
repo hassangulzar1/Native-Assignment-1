@@ -3,13 +3,14 @@ import {View, Image, StyleSheet} from 'react-native';
 import {Heading, Paragraph} from '../../../components/startText/Text';
 import StartButton from '../../../components/startButtons/Button';
 const First = () => {
+  const imagePath = require('../../../assets/startBtn.png');
   return (
     <View style={styles.container}>
       <Image source={require('../../../assets/start1.png')} />
       <Heading title="Make your own private travel plan" />
       <Paragraph Text="Formulate your strategy to receive wonderful gift packs" />
 
-      <StartButton />
+      <StartButton img={imagePath} />
     </View>
   );
 };
