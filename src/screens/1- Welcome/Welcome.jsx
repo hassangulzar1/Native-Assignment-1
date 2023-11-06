@@ -1,22 +1,19 @@
-import React from 'react';
-import {View, Image, StyleSheet} from 'react-native';
-
-const Welcome = () => {
-  return (
-    <View style={styles.container}>
-      <Image source={require('../../assets/owl.png')} />
-    </View>
-  );
-};
-
-export default Welcome;
-
-const styles = StyleSheet.create({
-  container: {
-    marginTop: '20px',
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'rgba(48, 98, 243, 1)',
-  },
-});
+// import SplashScreen from 'react-native-splash-screen';
+// import {Component} from 'react';
+//
+// export default class WelcomePage extends Component {
+//   componentDidMount() {
+//     SplashScreen.show();
+//
+//     setTimeout(() => {
+//       SplashScreen.hide();
+//     }, 2000);
+//
+//     // do stuff while splash screen is shown
+//     // After having done stuff (such as async tasks) hide the splash screen
+//   }
+//
+//   render() {
+//     return;
+//   }
+// }
