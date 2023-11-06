@@ -16,7 +16,7 @@ export const Paragraph = props => {
   );
 };
 
-export const LastText = props => {
+export const LastText = () => {
   return (
     <View style={styles.footer}>
       <View>
