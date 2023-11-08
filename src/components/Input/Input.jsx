@@ -9,17 +9,17 @@ import {
 } from 'react-native';
 const Input = props => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{marginHorizontal: 15, marginVertical: 8}}>
       {props.lable && <Text style={styles.placeHolder}>{props.lable}</Text>}
 
       <View style={styles.InputView}>
         <Image style={{marginLeft: 10}} source={props.inputImg} />
         <TextInput
-          style={[styles.placeHolder, {marginLeft: 3}]}
-          //   onChangeText={onChangeNumber}
-          //   value={number}
+          style={[styles.input, {marginLeft: 3}]}
           placeholder={props.placeHolder}
           inputMode="text"
+          value={props.name}
+          readOnly={props.readOnly}
         />
       </View>
     </SafeAreaView>
@@ -30,7 +30,6 @@ export default Input;
 
 const styles = StyleSheet.create({
   InputView: {
-    marginHorizontal: 15,
     marginTop: 5,
     display: 'flex',
     flexDirection: 'row',
@@ -44,5 +43,11 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     lineHeight: 21,
     color: 'rgba(173, 173, 173, 1)',
+  },
+  input: {
+    fontWeight: '400',
+    fontSize: 14,
+    lineHeight: 24,
+    color: 'rgba(39, 39, 39, 1)',
   },
 });

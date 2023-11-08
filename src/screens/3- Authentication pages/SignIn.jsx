@@ -8,10 +8,7 @@ const SignIn = () => {
   return (
     <View style={{flex: 1}}>
       <View style={{flex: 1, marginHorizontal: 15}}>
-        <AuthHeader
-          title="Sign In"
-          img={require('../../assets/settingsLogo.png')}
-        />
+        <AuthHeader title="Sign In" />
       </View>
 
       <View style={{flex: 4}}>
