@@ -1,9 +1,8 @@
 import React from 'react';
 import AuthHeader from '../../components/AuthHeader/AuthHeader';
 import Input from '../../components/Input/Input';
-import {View, Image, Text, StyleSheet} from 'react-native';
+import {View} from 'react-native';
 import BigButton from '../../components/BigButton/BigButton';
-
 const SignUp = () => {
   return (
     <View style={{flex: 1}}>
@@ -39,13 +38,3 @@ const SignUp = () => {
 };
 
 export default SignUp;
-
-const styles = StyleSheet.create({
-  afterSignIn: {
-    marginTop: 40,
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-});
