@@ -19,8 +19,8 @@ const App = () => {
       {/* <Third /> */}
       {/* <SignIn /> */}
       {/* <SettingsCenter /> */}
-      {/* <SignUp /> */}
-      <Home />
+      <SignUp />
+      {/* <Home /> */}
     </>
   );
 };
