@@ -10,7 +10,9 @@ const Second = () => {
       <Image source={require('../../../assets/start2.png')} />
       <Heading title="Customize your High-end travel" />
       <Paragraph Text="Countless high-end entertainment facilities" />
-      <StartButton img={imagePath} />
+      <View style={{marginTop: 30}}>
+        <StartButton img={imagePath} />
+      </View>
 
       <View style={styles.containerEnd}>
         <LastText />

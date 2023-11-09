@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(3, 115, 243, 1)',
     padding: 10,
     borderRadius: 50,
-    marginTop: 30,
     alignItems: 'center',
   },
 });

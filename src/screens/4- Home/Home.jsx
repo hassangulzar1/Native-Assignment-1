@@ -10,25 +10,32 @@ const Home = () => {
         <AuthHeader para="Find your next trip" title="Nordic scenery" />
       </View>
 
-      <View
-        style={{
-          flex: 4,
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-        }}>
-        <View style={{width: '70%'}}>
+      <View style={styles.filterView}>
+        <View style={{width: '75%'}}>
           <Input
             inputImg={require('../../assets/search.png')}
             placeHolder="Search..."
           />
         </View>
-        <StartButton img={require('../../assets/filter.png')} />
+        <View style={{marginEnd: 10}}>
+          <StartButton img={require('../../assets/filter.png')} />
+        </View>
       </View>
+
+      <View style={{flex: 2.5, backgroundColor: 'gray'}}></View>
+      <View style={{flex: 2.5, backgroundColor: 'blue'}}></View>
     </View>
   );
 };
 
 export default Home;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  filterView: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+});

@@ -13,7 +13,9 @@ const Third = () => {
         Text="The world's first-class modern leisure 
 and entertainment method"
       />
-      <StartButton img={imagePath} />
+      <View style={{marginTop: 30}}>
+        <StartButton img={imagePath} />
+      </View>
       <View style={styles.containerEnd}>
         <LastText />
       </View>

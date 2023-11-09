@@ -9,7 +9,9 @@ const First = () => {
       <Image source={require('../../../assets/start1.png')} />
       <Heading title="Make your own private travel plan" />
       <Paragraph Text="Formulate your strategy to receive wonderful gift packs" />
-      <StartButton img={imagePath} />
+      <View style={{marginTop: 30}}>
+        <StartButton img={imagePath} />
+      </View>
 
       <View style={styles.containerEnd}>
         <LastText />
