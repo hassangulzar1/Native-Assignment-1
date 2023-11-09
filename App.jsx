@@ -6,6 +6,7 @@ import SplashScreen from 'react-native-splash-screen';
 import SignIn from './src/screens/3- Authentication pages/SignIn';
 import SettingsCenter from './src/screens/3- Authentication pages/SettingsCenter';
 import SignUp from './src/screens/3- Authentication pages/SignUp';
+import Home from './src/screens/4- Home/Home';
 const App = () => {
   useEffect(() => {
     SplashScreen.hide();
@@ -18,7 +19,8 @@ const App = () => {
       {/* <Third /> */}
       {/* <SignIn /> */}
       {/* <SettingsCenter /> */}
-      <SignUp />
+      {/* <SignUp /> */}
+      <Home />
     </>
   );
 };
