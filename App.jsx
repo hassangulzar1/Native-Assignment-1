@@ -7,21 +7,30 @@ import SignIn from './src/screens/3- Authentication pages/SignIn';
 import SettingsCenter from './src/screens/3- Authentication pages/SettingsCenter';
 import SignUp from './src/screens/3- Authentication pages/SignUp';
 import Home from './src/screens/4- Home/Home';
+import {NavigationContainer} from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+const Tab = createBottomTabNavigator();
+
 const App = () => {
   useEffect(() => {
     SplashScreen.hide();
   }, []);
 
   return (
-    <>
+    <NavigationContainer>
       {/* <First /> */}
       {/* <Second /> */}
       {/* <Third /> */}
       {/* <SignIn /> */}
       {/* <SettingsCenter /> */}
       {/* <SignUp /> */}
+      {/* <Tab.Navigator initialRouteName="Home">
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Settings" component={SignIn} />
+      </Tab.Navigator> */}
+
       <Home />
-    </>
+    </NavigationContainer>
   );
 };
 

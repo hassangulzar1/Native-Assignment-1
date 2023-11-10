@@ -22,8 +22,8 @@ const Home = () => {
         </View>
       </View>
 
-      <View style={{flex: 2.5, backgroundColor: 'gray'}}></View>
-      <View style={{flex: 2.5, backgroundColor: 'blue'}}></View>
+      <View style={{flex: 2, backgroundColor: 'gray'}}></View>
+      <View style={{flex: 3, backgroundColor: 'blue'}}></View>
     </View>
   );
 };
