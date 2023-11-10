@@ -18,11 +18,6 @@ public class MainActivity extends ReactActivity {
         super.onCreate(savedInstanceState);
     }
 
-   @Override
-     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(null);
-    }
-
   protected String getMainComponentName() {
     return "usingcli";
   }

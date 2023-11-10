@@ -24,12 +24,12 @@ const App = () => {
       {/* <SignIn /> */}
       {/* <SettingsCenter /> */}
       {/* <SignUp /> */}
-      {/* <Tab.Navigator initialRouteName="Home">
+      <Tab.Navigator initialRouteName="Home">
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Settings" component={SignIn} />
-      </Tab.Navigator> */}
+      </Tab.Navigator>
 
-      <Home />
+      {/* <Home /> */}
     </NavigationContainer>
   );
 };
