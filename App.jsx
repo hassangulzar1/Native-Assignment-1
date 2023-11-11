@@ -28,8 +28,6 @@ const App = () => {
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Settings" component={SignIn} />
       </Tab.Navigator>
-
-      {/* <Home /> */}
     </NavigationContainer>
   );
 };
