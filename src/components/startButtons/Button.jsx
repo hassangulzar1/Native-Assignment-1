@@ -4,7 +4,7 @@ import {StyleSheet, Image, TouchableOpacity, View} from 'react-native';
 const StartButton = props => {
   return (
     <TouchableOpacity style={styles.buttonContainer}>
-      <Image style={{height: 22, width: 22}} source={props.img} />
+      <Image style={{height: 20, width: 20}} source={props.img} />
     </TouchableOpacity>
   );
 };

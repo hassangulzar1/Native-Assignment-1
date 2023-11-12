@@ -3,6 +3,8 @@ import {View, StyleSheet, Text} from 'react-native';
 import AuthHeader from '../../components/AuthHeader/AuthHeader';
 import Input from '../../components/Input/Input';
 import StartButton from '../../components/startButtons/Button';
+import HorizentalCard from '../../components/HorizentalCard/HorizentalCard';
+
 const Home = () => {
   return (
     <View style={{flex: 1}}>
@@ -24,6 +26,7 @@ const Home = () => {
 
       <View style={{flex: 2, marginHorizontal: 15}}>
         <Text style={styles.cardHeading}>Popular Locations</Text>
+        <HorizentalCard />
       </View>
       <View style={{flex: 3, backgroundColor: 'blue'}}></View>
     </View>
