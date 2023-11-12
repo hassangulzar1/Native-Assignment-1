@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
   },
   buttonTxt: {
-    marginStart: 4,
+    fontFamily: 'Poppins-Regular',
+    marginStart: 5,
     color: 'white',
     fontSize: 16,
     fontWeight: '400',

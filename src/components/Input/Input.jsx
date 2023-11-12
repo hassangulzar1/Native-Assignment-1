@@ -39,13 +39,14 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   placeHolder: {
+    fontFamily: 'Poppins-Regular',
     fontSize: 14,
-    fontWeight: '400',
     lineHeight: 21,
     color: 'rgba(173, 173, 173, 1)',
   },
   input: {
-    fontWeight: '400',
+    width: '100%',
+    fontFamily: 'Poppins-Regular',
     fontSize: 14,
     lineHeight: 24,
     color: 'rgba(39, 39, 39, 1)',

@@ -24,13 +24,13 @@ const App = () => {
     <NavigationContainer>
       {/* <First /> */}
       {/* <Second /> */}
-      <Third />
+      {/* <Third /> */}
       {/* <SignIn /> */}
       {/* <SettingsCenter /> */}
       {/* <SignUp /> */}
 
       {/* Bottom Navigation Starts Here   */}
-      {/* <Tab.Navigator
+      <Tab.Navigator
         screenOptions={{
           tabBarStyle: {
             borderTopEndRadius: 30,
@@ -91,7 +91,7 @@ const App = () => {
             ),
           }}
         />
-      </Tab.Navigator> */}
+      </Tab.Navigator>
     </NavigationContainer>
   );
 };

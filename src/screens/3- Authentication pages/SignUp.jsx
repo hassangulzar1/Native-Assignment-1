@@ -43,7 +43,7 @@ const SignUp = () => {
             </View>
           </Pressable>
           <Text style={styles.termsText} onPress={radioHandler}>
-            I have read the{' '}
+            I have read the
             <Text style={{...styles.termsText, color: '#0373F3'}}>
               Terms of Service
             </Text>

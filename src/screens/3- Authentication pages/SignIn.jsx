@@ -19,7 +19,10 @@ const SignIn = () => {
 
         <View style={styles.afterSignIn}>
           <Image source={require('../../assets/line.png')} />
-          <Text style={{color: 'rgba(0, 0, 0, 1)'}}>Or Continus with</Text>
+          <Text
+            style={{color: 'rgba(0, 0, 0, 1)', fontFamily: 'Poppins-Regular'}}>
+            Or Continus with
+          </Text>
           <Image source={require('../../assets/line.png')} />
         </View>
 
