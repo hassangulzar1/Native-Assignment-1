@@ -29,10 +29,19 @@ const App = () => {
       {/* <SettingsCenter /> */}
       {/* <SignUp /> */}
 
-      <Tab.Navigator initialRouteName="Home">
+      {/* Bottom Navigation Starts Here   */}
+      <Tab.Navigator
+        screenOptions={{
+          tabBarStyle: {
+            borderTopEndRadius: 30,
+            borderTopLeftRadius: 30,
+          },
+        }}
+        initialRouteName="Home">
         <Tab.Screen
           options={{
             headerShown: false,
+
             tabBarIcon: ({focused}) => (
               <CustomTabBarIcon
                 focused={focused}
