@@ -7,20 +7,20 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
-const HorizentalCard = () => {
+const HorizentalCard = props => {
   return (
     <TouchableOpacity>
       <ImageBackground
         style={styles.backGroundStyle}
         resizeMode="cover"
-        source={require('../../assets/swizerland.png')}>
+        source={props.image}>
         <View style={styles.textView}>
           <View style={{marginBottom: 10, marginStart: 10}}>
-            <Text style={styles.cardHeading}>Switzerland</Text>
-            <Text style={styles.cardPrice}>From $69</Text>
+            <Text style={styles.cardHeading}>{props.title}</Text>
+            <Text style={styles.cardPrice}>{props.price}</Text>
           </View>
           <Text style={{marginEnd: 10, color: 'white'}}>
-            4.9 <Image source={require('../../assets/star.png')} />
+            {props.rating} <Image source={require('../../assets/star.png')} />
           </Text>
         </View>
       </ImageBackground>
