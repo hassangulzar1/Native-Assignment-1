@@ -31,6 +31,7 @@ export default SignIn;
 
 const styles = StyleSheet.create({
   Heading: {
+    fontFamily: 'Poppins-Regular',
     fontSize: 30,
     fontWeight: '600',
     lineHeight: 45,
