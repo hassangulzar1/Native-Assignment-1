@@ -18,7 +18,7 @@ const SignIn = props => {
             <Text style={styles.Heading}>{props.title}</Text>
           </View>
           <Image
-            style={{height: 35, width: 35, marginTop: 20}}
+            style={{height: 30, width: 30, marginTop: 20}}
             source={props.img}
           />
         </View>
@@ -31,9 +31,9 @@ export default SignIn;
 
 const styles = StyleSheet.create({
   Heading: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins-Bold',
     fontSize: 30,
-    fontWeight: '600',
+    // fontWeight: '600',
     lineHeight: 45,
     letterSpacing: 0,
     color: 'rgba(31, 31, 31, 1)',
