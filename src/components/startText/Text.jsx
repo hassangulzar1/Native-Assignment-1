@@ -29,20 +29,20 @@ export const LastText = () => {
 
 const styles = StyleSheet.create({
   heading: {
+    fontFamily: 'Poppins-SemiBold',
     textAlign: 'center',
     fontSize: 28,
     marginTop: 20,
-    paddingHorizontal: 20,
-    fontWeight: '600',
+    paddingHorizontal: 15,
     color: 'black',
     lineHeight: 42,
   },
   text: {
+    fontFamily: 'Poppins-Regular',
     marginTop: 10,
-    fontWeight: '400',
     textAlign: 'center',
     fontSize: 18,
-    paddingHorizontal: 27,
+    paddingHorizontal: 24,
     lineHeight: 27,
     color: 'rgba(180, 180, 180, 1)',
   },

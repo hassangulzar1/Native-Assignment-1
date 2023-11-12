@@ -31,16 +31,15 @@ export default SignIn;
 
 const styles = StyleSheet.create({
   Heading: {
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Poppins-SemiBold',
     fontSize: 30,
-    // fontWeight: '600',
     lineHeight: 45,
     letterSpacing: 0,
     color: 'rgba(31, 31, 31, 1)',
   },
   para: {
+    fontFamily: 'Poppins-Medium',
     fontSize: 16,
-    fontWeight: '500',
     lineHeight: 24,
     color: 'background: rgba(129, 129, 129, 1)',
   },
