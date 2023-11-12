@@ -30,6 +30,7 @@ const App = () => {
       {/* <SignUp /> */}
 
       {/* Bottom Navigation Starts Here   */}
+
       <Tab.Navigator
         screenOptions={{
           tabBarLabelStyle: {
@@ -44,7 +45,6 @@ const App = () => {
         <Tab.Screen
           options={{
             headerShown: false,
-
             tabBarIcon: ({focused}) => (
               <CustomTabBarIcon
                 focused={focused}

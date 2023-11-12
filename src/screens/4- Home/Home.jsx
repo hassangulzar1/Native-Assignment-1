@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
 import AuthHeader from '../../components/AuthHeader/AuthHeader';
 import Input from '../../components/Input/Input';
 import StartButton from '../../components/startButtons/Button';
@@ -22,7 +22,9 @@ const Home = () => {
         </View>
       </View>
 
-      <View style={{flex: 2, backgroundColor: 'gray'}}></View>
+      <View style={{flex: 2, marginHorizontal: 15}}>
+        <Text style={styles.cardHeading}>Popular Locations</Text>
+      </View>
       <View style={{flex: 3, backgroundColor: 'blue'}}></View>
     </View>
   );
@@ -37,5 +39,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+  },
+  cardHeading: {
+    fontFamily: 'Poppins-Bold',
+    fontSize: 18,
+    lineHeight: 27,
+    color: 'black',
   },
 });
