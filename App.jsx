@@ -8,11 +8,11 @@ import SettingsCenter from './src/screens/3- Authentication pages/SettingsCenter
 import SignUp from './src/screens/3- Authentication pages/SignUp';
 import Home from './src/screens/4- Home/Home';
 import Wallet from './src/screens/5- Wallet/Wallet';
+import Guide from './src/screens/6- Guide/Guide';
+import Chart from './src/screens/7- Chart/Chart';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import CustomTabBarIcon from './src/components/TabIcons/CustomTabBarIcon';
-import Guide from './src/screens/6- Guide/Guide';
-import Chart from './src/screens/7- Chart/Chart';
 
 const Tab = createBottomTabNavigator();
 const App = () => {
@@ -32,6 +32,7 @@ const App = () => {
       <Tab.Navigator initialRouteName="Home">
         <Tab.Screen
           options={{
+            headerShown: false,
             tabBarIcon: ({focused}) => (
               <CustomTabBarIcon
                 focused={focused}
@@ -46,6 +47,7 @@ const App = () => {
           name="Wallet"
           component={Wallet}
           options={{
+            headerShown: false,
             tabBarIcon: ({focused}) => (
               <CustomTabBarIcon
                 focused={focused}
@@ -58,6 +60,7 @@ const App = () => {
           name="Guide"
           component={Guide}
           options={{
+            headerShown: false,
             tabBarIcon: ({focused}) => (
               <CustomTabBarIcon
                 focused={focused}
@@ -70,6 +73,7 @@ const App = () => {
           name="Chart"
           component={Chart}
           options={{
+            headerShown: false,
             tabBarIcon: ({focused}) => (
               <CustomTabBarIcon
                 focused={focused}
