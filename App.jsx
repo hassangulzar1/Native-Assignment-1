@@ -32,6 +32,9 @@ const App = () => {
       {/* Bottom Navigation Starts Here   */}
       <Tab.Navigator
         screenOptions={{
+          tabBarLabelStyle: {
+            fontFamily: 'Poppins-Regular',
+          },
           tabBarStyle: {
             borderTopEndRadius: 30,
             borderTopLeftRadius: 30,
