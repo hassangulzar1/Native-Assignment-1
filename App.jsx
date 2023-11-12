@@ -7,10 +7,14 @@ import SignIn from './src/screens/3- Authentication pages/SignIn';
 import SettingsCenter from './src/screens/3- Authentication pages/SettingsCenter';
 import SignUp from './src/screens/3- Authentication pages/SignUp';
 import Home from './src/screens/4- Home/Home';
+import Wallet from './src/screens/5- Wallet/Wallet';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-const Tab = createBottomTabNavigator();
+import CustomTabBarIcon from './src/components/TabIcons/CustomTabBarIcon';
+import Guide from './src/screens/6- Guide/Guide';
+import Chart from './src/screens/7- Chart/Chart';
 
+const Tab = createBottomTabNavigator();
 const App = () => {
   useEffect(() => {
     SplashScreen.hide();
@@ -24,9 +28,56 @@ const App = () => {
       {/* <SignIn /> */}
       {/* <SettingsCenter /> */}
       {/* <SignUp /> */}
+
       <Tab.Navigator initialRouteName="Home">
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="Settings" component={SignIn} />
+        <Tab.Screen
+          options={{
+            tabBarIcon: ({focused}) => (
+              <CustomTabBarIcon
+                focused={focused}
+                imageSource={require('./src/assets/homeIcon.png')}
+              />
+            ),
+          }}
+          name="Home"
+          component={Home}
+        />
+        <Tab.Screen
+          name="Wallet"
+          component={Wallet}
+          options={{
+            tabBarIcon: ({focused}) => (
+              <CustomTabBarIcon
+                focused={focused}
+                imageSource={require('./src/assets/walletIcon.png')}
+              />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Guide"
+          component={Guide}
+          options={{
+            tabBarIcon: ({focused}) => (
+              <CustomTabBarIcon
+                focused={focused}
+                imageSource={require('./src/assets/guideIcon.png')}
+              />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Chart"
+          component={Chart}
+          options={{
+            tabBarIcon: ({focused}) => (
+              <CustomTabBarIcon
+                focused={focused}
+                imageSource={require('./src/assets/chartIcon.png')}
+              />
+            ),
+          }}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );
