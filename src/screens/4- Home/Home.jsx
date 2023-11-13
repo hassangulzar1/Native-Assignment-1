@@ -52,7 +52,7 @@ const VerticleCardData = [
 ];
 const Home = () => {
   return (
-    <View style={{flex: 1}}>
+    <View style={{flex: 1, backgroundColor: '#fafafa'}}>
       <View style={{flex: 1, marginHorizontal: 15}}>
         <AuthHeader para="Find your next trip" title="Nordic scenery" />
       </View>
