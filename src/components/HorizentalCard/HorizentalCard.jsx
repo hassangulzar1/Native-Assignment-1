@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 const HorizentalCard = props => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity style={{margin: 10}}>
       <ImageBackground
         style={styles.backGroundStyle}
         resizeMode="cover"
@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   backGroundStyle: {
+    borderRadius: 50,
     height: 138,
     width: 230,
     display: 'flex',

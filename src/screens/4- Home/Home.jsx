@@ -13,6 +13,13 @@ const HorizontalCardData = [
     price: 'from $699',
     rating: '4.9',
   },
+  {
+    id: 'bd7acbea-c1b1-46c2-aed5-dfgfdg',
+    image: require('../../assets/canada.png'),
+    title: 'Canada',
+    price: 'from $826',
+    rating: '4.5',
+  },
 ];
 const Home = () => {
   return (
