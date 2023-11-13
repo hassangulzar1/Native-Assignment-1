@@ -4,7 +4,7 @@ const SignIn = props => {
   return (
     <View style={{flex: 1}}>
       <View style={{flex: 1, marginTop: 20}}>
-        {!props.para && (
+        {props.backArrow && (
           <Image
             style={{height: 20, width: 20, marginTop: 20}}
             source={require('../../assets/backArrow.png')}

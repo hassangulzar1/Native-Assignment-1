@@ -10,6 +10,7 @@ const SettingsCenter = () => {
       <View style={{flex: 1, marginHorizontal: 15}}>
         <AuthHeader
           title="Sign In"
+          backArrow={true}
           img={require('../../assets/settingsLogo.png')}
         />
       </View>

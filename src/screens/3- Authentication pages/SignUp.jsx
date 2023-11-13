@@ -14,7 +14,7 @@ const SignUp = () => {
   return (
     <View style={{flex: 1}}>
       <View style={{flex: 1, marginHorizontal: 15}}>
-        <AuthHeader title="Sign up free" />
+        <AuthHeader backArrow={true} title="Sign up free" />
       </View>
 
       <View style={{flex: 4}}>
