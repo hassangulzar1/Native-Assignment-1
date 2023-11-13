@@ -17,10 +17,12 @@ const SignIn = props => {
 
             <Text style={styles.Heading}>{props.title}</Text>
           </View>
-          <Image
-            style={{height: 30, width: 30, marginTop: 20}}
-            source={props.img}
-          />
+          {props.img && (
+            <Image
+              style={{height: 30, width: 30, marginTop: 20}}
+              source={props.img}
+            />
+          )}
         </View>
       </View>
     </View>
