@@ -10,10 +10,7 @@ import {
 const HorizentalCard = props => {
   return (
     <TouchableOpacity style={{margin: 10}}>
-      <ImageBackground
-        style={styles.backGroundStyle}
-        resizeMode="cover"
-        source={props.image}>
+      <ImageBackground style={styles.backGroundStyle} source={props.image}>
         <View style={styles.textView}>
           <View style={{marginBottom: 10, marginStart: 10}}>
             <Text style={styles.cardHeading}>{props.title}</Text>
@@ -53,7 +50,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   backGroundStyle: {
-    borderRadius: 50,
+    resizeMode: 'contain',
+    borderRadius: 25,
     height: 138,
     width: 230,
     display: 'flex',

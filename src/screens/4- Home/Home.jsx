@@ -20,6 +20,13 @@ const HorizontalCardData = [
     price: 'from $826',
     rating: '4.5',
   },
+  {
+    id: 'bd7acbea-1343-46c2-aed5-dfgfdg',
+    image: require('../../assets/himalias.png'),
+    title: 'Himalayan',
+    price: 'from $499',
+    rating: '4.9',
+  },
 ];
 const Home = () => {
   return (
@@ -42,7 +49,7 @@ const Home = () => {
 
       <View style={{flex: 2, marginHorizontal: 15}}>
         <Text style={styles.cardHeading}>Popular Locations</Text>
-        <SafeAreaView>
+        <View>
           <FlatList
             data={HorizontalCardData}
             horizontal
@@ -56,10 +63,11 @@ const Home = () => {
               />
             )}
           />
-        </SafeAreaView>
-        <HorizentalCard />
+        </View>
       </View>
-      <View style={{flex: 3, backgroundColor: 'blue'}}></View>
+      <View style={{flex: 3, marginHorizontal: 15, marginTop: 10}}>
+        <Text style={styles.cardHeading}>Popular Locations</Text>
+      </View>
     </View>
   );
 };
