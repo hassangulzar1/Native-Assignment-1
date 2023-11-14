@@ -1,18 +1,25 @@
-import React from 'react';
-import {View, Image, StyleSheet} from 'react-native';
+import React, {useState} from 'react';
+import {View, Image, StyleSheet, Pressable} from 'react-native';
 import {Heading, Paragraph, LastText} from '../../../components/startText/Text';
 import StartButton from '../../../components/startButtons/Button';
 
-const Second = () => {
-  const imagePath = require('../../../assets/startBtn.png');
+const Second = ({navigation}) => {
+  const [isPressed, setIsPressed] = useState(false);
   return (
     <View style={styles.container}>
       <Image source={require('../../../assets/start2.png')} />
       <Heading title="Customize your High-end travel" />
       <Paragraph Text="Countless high-end entertainment facilities" />
-      <View style={{marginTop: 30}}>
-        <StartButton img={imagePath} />
-      </View>
+      <Pressable
+        onPressIn={() => setIsPressed(true)}
+        onPressOut={() => setIsPressed(false)}
+        style={{marginTop: 30}}
+        onPress={() => navigation.navigate('third')}>
+        <StartButton
+          pressed={isPressed}
+          img={require('../../../assets/startBtn.png')}
+        />
+      </Pressable>
 
       <View style={styles.containerEnd}>
         <LastText />

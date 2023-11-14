@@ -1,11 +1,12 @@
 import React from 'react';
-import {StyleSheet, Image, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, Image, View} from 'react-native';
 
 const StartButton = props => {
   return (
-    <TouchableOpacity style={styles.buttonContainer}>
+    <View
+      style={[styles.buttonContainer, props.pressed && styles.buttonPressed]}>
       <Image style={{height: 20, width: 20}} source={props.img} />
-    </TouchableOpacity>
+    </View>
   );
 };
 
@@ -20,5 +21,8 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 50,
     alignItems: 'center',
+  },
+  buttonPressed: {
+    backgroundColor: 'gray',
   },
 });

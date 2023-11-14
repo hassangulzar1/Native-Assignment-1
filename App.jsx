@@ -6,15 +6,11 @@ import SplashScreen from 'react-native-splash-screen';
 import SignIn from './src/screens/3- Authentication pages/SignIn';
 import SettingsCenter from './src/screens/3- Authentication pages/SettingsCenter';
 import SignUp from './src/screens/3- Authentication pages/SignUp';
-import Home from './src/screens/4- Home/Home';
-import Wallet from './src/screens/5- Wallet/Wallet';
-import Guide from './src/screens/6- Guide/Guide';
-import Chart from './src/screens/7- Chart/Chart';
 import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import CustomTabBarIcon from './src/components/TabIcons/CustomTabBarIcon';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import MainRoutes from './src/screens/MainPageRoutes/MainRoutes';
 
-const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
 const App = () => {
   useEffect(() => {
     SplashScreen.hide();
@@ -22,79 +18,32 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      {/* <First /> */}
-      {/* <Second /> */}
-      {/* <Third /> */}
+      <Stack.Navigator initialRouteName="first">
+        <Stack.Screen
+          options={{headerShown: false}}
+          name="first"
+          component={First}
+        />
+        <Stack.Screen
+          options={{headerShown: false}}
+          name="second"
+          component={Second}
+        />
+        <Stack.Screen
+          options={{headerShown: false}}
+          name="third"
+          component={Third}
+        />
+        <Stack.Screen
+          options={{headerShown: false}}
+          name="main"
+          component={MainRoutes}
+        />
+      </Stack.Navigator>
+
       {/* <SignIn /> */}
       {/* <SettingsCenter /> */}
       {/* <SignUp /> */}
-
-      {/* Bottom Navigation Starts Here   */}
-
-      <Tab.Navigator
-        screenOptions={{
-          tabBarLabelStyle: {
-            fontFamily: 'Poppins-Regular',
-          },
-          tabBarStyle: {
-            borderTopEndRadius: 30,
-            borderTopLeftRadius: 30,
-          },
-        }}
-        initialRouteName="Home">
-        <Tab.Screen
-          options={{
-            headerShown: false,
-            tabBarIcon: ({focused}) => (
-              <CustomTabBarIcon
-                focused={focused}
-                imageSource={require('./src/assets/homeIcon.png')}
-              />
-            ),
-          }}
-          name="Home"
-          component={Home}
-        />
-        <Tab.Screen
-          name="Wallet"
-          component={Wallet}
-          options={{
-            headerShown: false,
-            tabBarIcon: ({focused}) => (
-              <CustomTabBarIcon
-                focused={focused}
-                imageSource={require('./src/assets/walletIcon.png')}
-              />
-            ),
-          }}
-        />
-        <Tab.Screen
-          name="Guide"
-          component={Guide}
-          options={{
-            headerShown: false,
-            tabBarIcon: ({focused}) => (
-              <CustomTabBarIcon
-                focused={focused}
-                imageSource={require('./src/assets/guideIcon.png')}
-              />
-            ),
-          }}
-        />
-        <Tab.Screen
-          name="Chart"
-          component={Chart}
-          options={{
-            headerShown: false,
-            tabBarIcon: ({focused}) => (
-              <CustomTabBarIcon
-                focused={focused}
-                imageSource={require('./src/assets/chartIcon.png')}
-              />
-            ),
-          }}
-        />
-      </Tab.Navigator>
     </NavigationContainer>
   );
 };
