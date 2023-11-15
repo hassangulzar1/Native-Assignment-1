@@ -9,7 +9,6 @@ import SignUp from './src/screens/3- Authentication pages/SignUp';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import MainRoutes from './src/screens/MainPageRoutes/MainRoutes';
-
 const Stack = createNativeStackNavigator();
 const App = () => {
   useEffect(() => {
