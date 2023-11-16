@@ -38,7 +38,6 @@ const App = () => {
           component={MainRoutes}
         />
       </Stack.Navigator>
-
       {/* <SignIn /> */}
       {/* <SettingsCenter /> */}
       {/* <SignUp /> */}
