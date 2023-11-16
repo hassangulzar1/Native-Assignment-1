@@ -14,7 +14,6 @@ const App = () => {
   useEffect(() => {
     SplashScreen.hide();
   }, []);
-
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="first">
